@@ -67,6 +67,12 @@
     <DocumentationFile>bin\$(Configuration)\$(TargetFrameworkConstant)\Cassette.Views.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Cassette.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -90,6 +96,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Cassette.pfx" />
     <None Include="Cassette.Views.nutrans">
       <SubType>Designer</SubType>
     </None>

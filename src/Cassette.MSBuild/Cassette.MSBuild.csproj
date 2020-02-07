@@ -61,6 +61,12 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Cassette.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Iesi.Collections">
       <HintPath>$(SolutionDir)packages\Iesi.Collections.3.3.2.4000\lib\Net35\Iesi.Collections.dll</HintPath>
@@ -97,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Cassette.MSBuild.symbols.nutrans" />
+    <None Include="Cassette.pfx" />
     <None Include="Cassette.targets">
       <SubType>Designer</SubType>
     </None>

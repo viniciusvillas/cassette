@@ -20,10 +20,3 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("1038439c-5eae-4483-9051-adca689d2532")]
-
-[assembly: InternalsVisibleTo("Cassette.Aspnet.UnitTests")]
-[assembly: InternalsVisibleTo("Cassette.Aspnet.Jasmine")]
-[assembly: InternalsVisibleTo("Cassette.IntegrationTests")]
-
-// To allow mocking of internal types, using Moq, the following is required.
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

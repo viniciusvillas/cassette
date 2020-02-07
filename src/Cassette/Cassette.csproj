@@ -69,6 +69,12 @@
     <DocumentationFile>bin\$(Configuration)\$(TargetFrameworkConstant)\Cassette.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Cassette.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup Condition="'$(TargetFrameworkVersion)' == 'v4.0'">
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
@@ -332,6 +338,7 @@
     <None Include="Cassette.nutrans">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Cassette.pfx" />
     <None Include="Cassette.symbols.nutrans" />
     <None Include="packages.config" />
   </ItemGroup>
